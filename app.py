@@ -1,17 +1,13 @@
 
 # ==================== Reading Files =====================
-# continue at 03:00
+#  
 
-countryFile = open('countries.txt', 'r')   # w(write on the file), a(Append on the file), r+(we want to do both reading and writing) 
+# countryFile = open('countries1.txt', 'w')   # When writing a file, we make use of "w"
+# countryFile = open('countries1.txt', 'a')   # When writing a file, we make use of "w"
+newFile = open('newFile.py', 'w')   # When writing a file, we make use of "w"
 
-print(countryFile.readable())
-# print(countryFile.readline())      # Prints the first line: Cameroon
-# print(countryFile.readline())      # Prints the 2nd line England
-# print(countryFile.readlines())     # Prints all the lines in the file
-# print(countryFile.readlines()[1])      # Prints the second line
+# print(countryFile.write('\nThis is the new line'))
+# print(countryFile.write('This is a new line'))
+newFile.write('print(\'This is a new file\')')   # Creating a new file newFile.py
 
-for lines in countryFile.readlines():
-    print(lines)
-
-
-countryFile.close()
+ 
