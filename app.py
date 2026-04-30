@@ -1,6 +1,24 @@
+# x = "Hello Tizih"
+# print(x[-5:-2])   # gives you orl
+# print(x.strip())  
 
-# ====================  Introduction To PIP =====================
-# PIP is used for installing external modules from the web into your PC
+# z = "He llo the re"
+# print(z.strip()) 
 
-# UPNeXT DJANGO 03:38
+# def sumNum(*args):
+#     return sum(args)
 
+# print(sumNum(1, 2, 3))
+
+# def greet(**kwargs):
+#     for key, value in kwargs.items():
+
+
+#         print(f"{key}: {value}")
+
+# greet(name="Tizih", age=3
+
+class A:
+    pass
+a = A()
+print(type(a))
