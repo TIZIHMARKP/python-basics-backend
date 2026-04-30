@@ -41,16 +41,33 @@ Use a combination of loops, conditionals, and string methods.
 
 # ==== Solution 8 =====
 
-userScore = int(input("Enter your scroe between 0-100: "))
-if userScore < 0 or userScore > 100:
-    print("Error: Score must be between 0 and 100")
-elif(userScore >= 90):
-    print("A")
-elif(userScore >= 80):
-    print("B")
-elif(userScore >= 70):
-    print("C")
-elif(userScore >= 60):
-    print("D")
-else:
-    print("F")
+# userScore = int(input("Enter your scroe between 0-100: "))
+# if userScore < 0 or userScore > 100:
+#     print("Error: Score must be between 0 and 100")
+# elif(userScore >= 90):
+#     print("A")
+# elif(userScore >= 80):
+#     print("B")
+# elif(userScore >= 70):
+#     print("C")
+# elif(userScore >= 60):
+#     print("D")
+# else:
+#     print("F")
+
+# ==== Solution 9 ====
+
+vowels = 'aeiouAEIOU'
+vowelsCount = 0
+sentence = str(input("Enter a sentence: "))
+
+for letter in sentence:
+    if letter in vowels:
+        vowelsCount += 1
+print(f"Number of vowels: {vowelsCount}")
+
+if len(sentence) > 20:
+    print("The sentence is longer than 20 characters")
+
+sentenceTitle = sentence.title()
+print(f"Title: {sentenceTitle}")
