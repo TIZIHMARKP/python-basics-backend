@@ -30,12 +30,11 @@ Use a combination of loops, conditionals, and string methods.
 
 # === Solution 7 ===
 
-# a = int(input("Enter first number: "))
-# b = int(input("Enter second number: "))
-# addition, subtraction, multiplication, division, = a + b, a - b, a * b, a / b
-# print(f"Addition of {a} + {b} = {addition}")
-# print(f"subtraction of {a} - {b} = {subtraction}")
-# print(f"multiplication of {a} * {b} = {multiplication}")
-# print(f"division of {a} / {b} = {division}")
-
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+addition, subtraction, multiplication, division, = a + b, a - b, a * b, a / b
+print(f"Addition of {a} + {b} = {addition}")
+print(f"subtraction of {a} - {b} = {subtraction}")
+print(f"multiplication of {a} * {b} = {multiplication}")
+print(f"division of {a} / {b} = {division}")
 
