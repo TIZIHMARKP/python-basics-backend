@@ -39,3 +39,18 @@ Use a combination of loops, conditionals, and string methods.
 # print(f"division of {a} / {b} = {division}")
 
 
+# ==== Solution 8 =====
+
+userScore = int(input("Enter your scroe between 0-100: "))
+if userScore < 0 or userScore > 100:
+    print("Error: Score must be between 0 and 100")
+elif(userScore >= 90):
+    print("A")
+elif(userScore >= 80):
+    print("B")
+elif(userScore >= 70):
+    print("C")
+elif(userScore >= 60):
+    print("D")
+else:
+    print("F")

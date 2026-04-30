@@ -30,11 +30,26 @@ Use a combination of loops, conditionals, and string methods.
 
 # === Solution 7 ===
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-addition, subtraction, multiplication, division, = a + b, a - b, a * b, a / b
-print(f"Addition of {a} + {b} = {addition}")
-print(f"subtraction of {a} - {b} = {subtraction}")
-print(f"multiplication of {a} * {b} = {multiplication}")
-print(f"division of {a} / {b} = {division}")
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# addition, subtraction, multiplication, division, = a + b, a - b, a * b, a / b
+# print(f"Addition of {a} + {b} = {addition}")
+# print(f"subtraction of {a} - {b} = {subtraction}")
+# print(f"multiplication of {a} * {b} = {multiplication}")
+# print(f"division of {a} / {b} = {division}")
 
+# ==== Solution 8 =====
+
+userScore = int(input("Enter your scroe between 0-100: "))
+if userScore < 0 or userScore > 100:
+    print("Error: Score must be between 0 and 100")
+elif(userScore >= 90):
+    print("A")
+elif(userScore >= 80):
+    print("B")
+elif(userScore >= 70):
+    print("C")
+elif(userScore >= 60):
+    print("D")
+else:
+    print("F")
