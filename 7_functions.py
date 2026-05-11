@@ -22,3 +22,4 @@ greetingsFunction1('Mark Marko', 120)
 greetingsFunction2('Prince', 'Royal', 'Paul')
 greetingsFunction3(name, age)
 
+
