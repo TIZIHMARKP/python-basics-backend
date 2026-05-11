@@ -24,36 +24,5 @@
 
 # ========= TASk 9 ========
 
-class Book:
-    def __init__(self, title, pages):
-        self.title = title
-        self.pages = pages
-
-    # For ==
-    def __eq__(self, other):
-        # comparing base on pages
-        return self.pages == other.pages
-    
-    # For <
-    def __lt__(self, other):
-        # comparing base on page counts
-        return self.pages < other.pages
-
-book1 = Book("Bible", 1000)   
-book2 = Book('Romeo and Julieth', 200)
-book3 = Book("Advance Python", 350)
-book4 = Book("Python Basics", 200)
-
-# Testing comparisons of objects
-print(book1 == book3)  # False
-print(book1 < book2)   # False
-print(book2 > book1)   # False
-print(book2 == book4)  # True
-
-# With detailed messages
-print(f"`{book1.title}` and `{book3.title}` same pages? {book1 == book3}")  # False
-print(f"`{book1.title}` fewer pages than `{book2.title}`? {book1 < book3}")  # False
-print(f"`{book2.title}` more pages than `{book1.title}`? {book1 > book1}")  # False
-print(f"`{book2.title}` and `{book4.title}` same pages? {book2 == book4}")  # True
 
     
