@@ -22,28 +22,31 @@
 """
 
 
-# ========= TASk 8 ========
+# ========= TASk 9 ========
 
-class Person:
-    def __init__(self, name):
-        self.name = name
+class Book:
+    def __init__(self, title, pages):
+        self.title = title
+        self.pages = pages
 
-    def introduce(self):
-        print(f"Hello, my name is {self.name}")
+    # For ==
+    def __eq__(self, other):
+        # comparing base on pages
+        return self.pages == other.pages
+    
+    # For <
+    def __lt__(self, other):
+        # comparing base on page counts
+        return self.pages < other.pages
 
-class Worker:
-    def __init__(self, job):
-        self.job = job
+book1 = Book("Bible", 1000)   
+book2 = Book('Romeo and Julieth', 200)
+book3 = Book("Advance Python", 350)
+book4 = Book("Python Basics", 200)
 
-class Manager(Person, Worker):
-    def __init__(self, name, job):  # combining and initialising the attribute of Person and Worker class
-        Person.__init__(self, name)
-        Worker.__init__(self, job)
+print(book1 == book3)  # False
+print(book1 < book2)   # False
+print(book2 < book1)   # True
+print(book2 == book4)  # True
 
-    def outPut(self):
-        print(f"{self.name} works as a {self.job}")
-
-managerObj1 = Manager("Paul", "Plumber")
-managerObj1.introduce()
-print(f"Job: {managerObj1.job}")
-managerObj1.outPut()
+    
