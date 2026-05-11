@@ -20,30 +20,3 @@
 9. Create a Book class with attributes title and pages. Implement __eq__ to compare two books based on pages and __lt__ to compare based on page count. Test by comparing two Book objects.
 
 """
-
-
-# ========= TASk 8 ========
-
-class Person:
-    def __init__(self, name):
-        self.name = name
-
-    def introduce(self):
-        print(f"Hello, my name is {self.name}")
-
-class Worker:
-    def __init__(self, job):
-        self.job = job
-
-class Manager(Person, Worker):
-    def __init__(self, name, job):
-        Person.__init__(self, name)
-        Worker.__init__(self, job)
-
-    def outPut(self):
-        print(f"{self.name} works as a {self.job}")
-
-managerObj1 = Manager("Paul", "Plumber")
-managerObj1.introduce()
-print(f"Job: {managerObj1.job}")
-managerObj1.outPut()
