@@ -36,7 +36,7 @@ class Worker:
         self.job = job
 
 class Manager(Person, Worker):
-    def __init__(self, name, job):
+    def __init__(self, name, job):  # combining and initialising the attribute of Person and Worker class
         Person.__init__(self, name)
         Worker.__init__(self, job)
 
