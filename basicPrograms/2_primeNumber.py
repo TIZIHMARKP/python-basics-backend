@@ -6,6 +6,7 @@
 
 num = int(input("Enter a number: "))
 
+# define a flag variable
 flag = False
 if num == 1:
     print(f"{num} is not a prime number ")
@@ -13,10 +14,10 @@ elif num > 1:
     # check for factors
     for i in range(2, num):
         if (num % i) == 0:
-            flag = True
-            break
+            flag = True     # If factor is found, set flag to True
+            break          # breakx out of the loop
 
-if flag:
+if flag:                    # checkx if flag is True
     print(f"{num} is not a prime number")
 else:
     print(f"{num} is a prime number")
