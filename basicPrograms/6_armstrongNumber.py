@@ -19,20 +19,25 @@
 
 # Therefore, 9474 is an Armstrong number as well.
 
+#       Solution:
+
 num = int(input("Enter a number: "))
 
+# Convert the number to a string to easily access each digit and determine the number of digits
 num_str = str(num)
 num_digits = len(num_str)
 
+# Initialize a variable to store the sum of the digits raised to the power of the number of digits
 sum_of_powers = 0
 temp_num = num
 
-
+# Loop through each digit in the number, raise it to the power of the number of digits, and add it to the sum
 while temp_num > 0:
     digit = temp_num % 10
     sum_of_powers += digit ** num_digits  # Raise the digit to the power of the number of digits and add it to the sum
     temp_num //= 10                    # Remove the last digit
 
+# After the loop, we compare the sum of the digits raised to the power of the number of digits with the original number
 if sum_of_powers == num:
     print(f"{num} is an Armstrong number.")
 else:
