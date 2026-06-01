@@ -19,3 +19,22 @@
 
 # Therefore, 9474 is an Armstrong number as well.
 
+num = int(input("Enter a number: "))
+
+num_str = str(num)
+num_digits = len(num_str)
+
+sum_of_powers = 0
+temp_num = num
+
+
+while temp_num > 0:
+    digit = temp_num % 10
+    sum_of_powers += digit ** num_digits  # Raise the digit to the power of the number of digits and add it to the sum
+    temp_num //= 10                    # Remove the last digit
+
+if sum_of_powers == num:
+    print(f"{num} is an Armstrong number.")
+else:
+    print(f"{num} is not an Armstrong number.")
+
