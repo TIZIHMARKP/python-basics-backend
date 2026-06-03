@@ -35,7 +35,9 @@ temp_num = num
 while temp_num > 0:
     digit = temp_num % 10
     sum_of_powers += digit ** num_digits  # Raise the digit to the power of the number of digits and add it to the sum
-    temp_num //= 10                    # Remove the last digit
+    temp_num //= 10                    # Remove the last digit (floor division by 10)
+    # temp_num = temp_num // 10 is equivalent to temp_num //= 10, which removes the last digit from temp_num
+    # // = floor division = normal division but it chops off the decimal and keeps only the integer part of the result
 
 # After the loop, we compare the sum of the digits raised to the power of the number of digits with the original number
 if sum_of_powers == num:
