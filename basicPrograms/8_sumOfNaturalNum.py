@@ -10,9 +10,10 @@
 limit = int(input("Enter the limit: "))
 sum = 0
 
-for i in range(1, limit + 1):  
+for i in range(1, limit + 1):  # Loop through the numbers from 1 to the specified limit
     sum += i 
 
+# Print the result
 print(f"The sum of the first {limit} natural numbers is: {sum}")  
 
 
