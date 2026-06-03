@@ -4,3 +4,15 @@
 # denoted as "N" and can be expressed as:
 
 # N = {1, 2, 3, 4, 5, ...}
+
+# Writing a Python Program to Find the Sum of Natural Numbers.
+
+limit = int(input("Enter the limit: "))
+sum = 0
+
+for i in range(1, limit + 1):  
+    sum += i 
+
+print(f"The sum of the first {limit} natural numbers is: {sum}")  
+
+
