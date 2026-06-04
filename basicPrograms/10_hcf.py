@@ -13,13 +13,13 @@
 # Python program to find the H.C.F of two input numbers
 
 def compute_hcf(x, y):
-    if x > y:          
+    if x > y:          # Choosx the smaller number among x and y
         smaller = y
     else:
         smaller = x
 
     for i in range(1, smaller + 1): 
-        if (x % i == 0) and (y % i == 0): 
+        if (x % i == 0) and (y % i == 0): # Checking if i is a common factor of both x and y
             hcf = i
 
     return hcf
