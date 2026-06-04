@@ -13,13 +13,13 @@
 # Python program to find the L.C.M of two input numbers
 
 def compute_lcm(x, y):
-    if x > y:
+    if x > y:          # Choosing a greater number among x and y
         greater = x
     else:
         greater = y
 
     while(True):
-        if (greater % x == 0) and (greater % y == 0):
+        if (greater % x == 0) and (greater % y == 0): # Checking if the greater number is divisible by both x and y
             lcm = greater
             break
         greater += 1
