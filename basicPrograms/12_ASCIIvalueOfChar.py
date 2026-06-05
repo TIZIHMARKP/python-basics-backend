@@ -8,4 +8,6 @@
 # letters, digits, punctuation marks, and control characters.
 
 
+char = str(input("Enter the character to check ASCII value: "))
+print("The ASCII value of: '" + char + "' is", ord(char))
 
