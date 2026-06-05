@@ -8,6 +8,12 @@
 # hexadecimal = base 16
 
 
+dec_num = int(input("Enter a decimal Number: "))
+
+print("The decimal value of: ", dec_num, "is: ")
+print(bin(dec_num), "In binary")
+print(oct(dec_num), "In octal")
+print(hex(dec_num), "In hexadecimal")
 
 
 
