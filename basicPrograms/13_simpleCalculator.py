@@ -1,10 +1,11 @@
 #  Python Program to Make a Simple Calculator with 4 basic mathematical
 # operations.
 
-
+# This function adds two numbers
 def add(x, y):
     return x + y
 
+# This function subtracts two numbers
 def subtract(x, y):
     return x - y
 
