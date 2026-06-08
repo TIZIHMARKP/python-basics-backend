@@ -8,7 +8,7 @@
 # ). The sequence begins: 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on. The Fibonacci sequence has
 # widespread applications in mathematics, computer science, nature, and art.
 
-
+# definx a recursive function
 def recur_fibo(n):
     if n <= 1:
         return n
@@ -17,6 +17,7 @@ def recur_fibo(n):
     
 nterms = int(input("Enter the number of terms (greater than 0): "))
 
+# checkx if the number of terms is valid
 if nterms <= 0:
     print("Please enter a positive number: ")
 else:
@@ -25,6 +26,6 @@ else:
     for i in range(nterms):
         print(recur_fibo(i))
 
-        
+
 
 
