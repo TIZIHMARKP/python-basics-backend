@@ -24,7 +24,7 @@ print("Welcome to the BMI calculator.")
 bmi = bodyMassIndex(h, w)
 print("Your BMI is: ", bmi)
 
-
+# Evaluating conditions
 if bmi <= 18.5:
     print("You are underweight. ")
 elif 18.5 < bmi <= 24.9:
