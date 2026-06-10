@@ -14,3 +14,14 @@
 # It is commonly used in various branches of mathematics, especially in calculus and
 # mathematical analysis, as well as in fields such as physics, economics, and engineering.
 
+import math 
+
+num = float(input("Enter a number: "))
+
+if num <= 0:
+    print("Please enter a positive number")
+else:
+
+    result = math.log(num)
+    print(f"The natural logarithm of {num} is: {result}")
+    
