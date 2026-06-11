@@ -8,10 +8,21 @@
 # in a list can be of different data types, and you can perform various operations such as
 # adding, removing, or modifying elements
 
-# Finding sum of Array using sum()
+# ==== Finding sum of Array using sum()   ===
+# arr = [1, 2, 3]
 
-arr = [1, 2, 3]
+# ans = sum(arr)
 
-ans = sum(arr)
+# print("sum of array is: ", ans)
 
-print("sum of array is: ", ans)
+def sum_of_array(arr):
+    total = 0
+
+    for element in arr:
+        total += element
+
+    return total
+
+array = [1, 2, 3, 4]
+result = sum_of_array(array)
+print("Sum of the array: ", result)
