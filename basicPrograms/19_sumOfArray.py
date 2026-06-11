@@ -8,3 +8,10 @@
 # in a list can be of different data types, and you can perform various operations such as
 # adding, removing, or modifying elements
 
+# Finding sum of Array using sum()
+
+arr = [1, 2, 3]
+
+ans = sum(arr)
+
+print("sum of array is: ", ans)
