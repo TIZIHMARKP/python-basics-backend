@@ -15,14 +15,16 @@
 
 # print("sum of array is: ", ans)
 
+# Function to find the sum of elements in an array
 def sum_of_array(arr):
-    total = 0
+    total = 0           # Initializing a variable to store the sum
 
     for element in arr:
-        total += element
+        total += element    # adding each element to the total
 
     return total
 
+# example
 array = [1, 2, 3, 4]
 result = sum_of_array(array)
 print("Sum of the array: ", result)
