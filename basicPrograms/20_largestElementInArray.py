@@ -4,6 +4,7 @@ def find_largest_element(arr):
     if not arr:
         return "Array is empty"
     
+    # Initializing the first element as the largest
     largest_element = arr[0]
 
     for element in arr:
