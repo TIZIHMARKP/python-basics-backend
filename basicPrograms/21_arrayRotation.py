@@ -13,3 +13,11 @@ def rotate_array(arr, d):
 
     return rotated_arr
 
+arr = [1, 2, 3, 4, 5, 6]
+
+d = int(input("Enter number of positions to rotate less than 5: "))
+
+result = rotate_array(arr, d)
+
+print("Original Array: ", arr)
+print("Rotated Array: ", result)
