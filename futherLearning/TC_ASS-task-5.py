@@ -12,8 +12,23 @@
 
 # 4. Write a program that defines a nested dictionary representing a classroom (e.g., { "class1": {"Alice": 85, "Bob": 90}, "class2": {"Charlie": 78}}). Create a function to calculate the average score for each class and return a dictionary with class names and their averages.
 
+classRoom = {
+    "Form1": {"Alice": 85, "Bob": 90, "Mary": 88, "John": 70},
+    "Form2": {"David": 80, "Adam": 92, "Rice": 50},
+    "Form3": {"Burinyu": 70, "Tata": 75},
+    "Form4": {"Randy": 80}
+}
 
+def calcuAvg(classes):
+    avgs = {}
 
+    for className, studs in classes.items():
+        scores = studs.values()
+        avg = sum(scores) / len(scores)
+        avgs[className] = round(avg, 2)
 
+    return avgs
 
+AvgResult = calcuAvg(classRoom)
+print("Final Average Result: ", AvgResult)
 
