@@ -95,5 +95,8 @@ The flask app instance is the central object in a flask application which is cre
 - It integrates third-party extensions (like Flask-SQLAlchemy)
 - It further manages application and request contexts
 
+Q 10. 
+The `__name__ == "__main__"` check determines whether the current file is executed directly by the user or whether is is imported as a module into another program file.
+
 
 """
