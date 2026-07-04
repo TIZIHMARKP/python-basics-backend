@@ -25,7 +25,7 @@
 
 # =================  ANSWERS =============
 """
-1. a. HTTP (HyperText Transfer Protocol) is the protocol used for communication between web clients (like browsers) and servers. It acts as the foundation of data communication on the World Wide Web. 
+Q 1. a. HTTP (HyperText Transfer Protocol) is the protocol used for communication between web clients (like browsers) and servers. It acts as the foundation of data communication on the World Wide Web. 
 b. HTTP works on a request-response cycle, where by a client sends a HTTP request, and the server returns a HTTP response. It works as follows
 - Client sends a request through a browser or app asking for a resource (like rendering a particular page)
 - The server processes or understands what was asked and fetches the data
@@ -35,6 +35,16 @@ c. The major components of an HTTP response are:
 1. Status Line. This is the first line of the response that includes the HTTP version, status code and status message
 2. Headers. They are key value pairs that provide additional information about the response. It is usually sent before the body and contains meta data like Content-Type, Set-Cookie, Content-Length
 3. Body. It is the actual data being sent by the server. It could be JSON, files, plain text, images or html for web pages.
+
+Q 2. 
+The common HTTP methods and their purposes are:
+1. GET. The purpose is to retrieve data from the server (read-only)
+2. POST. Send data to the server to create a new resource
+3. PUT. To update or replace an existing resource entirely
+4. DELETE. Removes a resource from the server
+5. PATCH. It functions to partially update an existing resource
+6. HEAD. It is similar to GET but returns only headers without a body
+7. OPTIONS. It ask the server which HTTP methods are allowed for a resource 
 
 
 """
