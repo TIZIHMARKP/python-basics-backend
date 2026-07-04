@@ -57,5 +57,12 @@ HTTP headers are used to to pass additional information between the client and s
 - Cookie. Functions to transfer stored client data (session IDs)
 - Host. Specifying which server the request is for 
 
+Q 5. 
+a. 1xx (Informational). It means the request has been received and the server is continuing to process the information.  Example 100 (continue)
+b. 2xx (Success). It means the request was successfully received, understood, and accepted by the server. Example 200 (ok), 201 (created)
+c. 3xx (Redirection). It means further action is needed from the client to complete the request. Example 301 (Moved permanently), 302 (Found)
+d. 4xx (Client Error). It means the request contains bad syntax or it cannot be fulfilled by the client. Example 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found)
+e. 5xx (Server Error). It usually means the server failed to fulfill a valid request from the client. Example 500 (Internal Server Error), 502 (Bad Gateway), 503 (Service Unavailable) 
+
 
 """
