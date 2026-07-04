@@ -64,5 +64,9 @@ c. 3xx (Redirection). It means further action is needed from the client to compl
 d. 4xx (Client Error). It means the request contains bad syntax or it cannot be fulfilled by the client. Example 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found)
 e. 5xx (Server Error). It usually means the server failed to fulfill a valid request from the client. Example 500 (Internal Server Error), 502 (Bad Gateway), 503 (Service Unavailable) 
 
+Q 6. 
+- Status code 200 stands for OK and indicates that the request was successfully processed and the server is returning the requested content. It is the standard success response for GET requests
+- Status code 404 stands for NOT FOUND and indicates that the server cannot find the requested resource. This is one of the most client errors and typically means that the URL is wrong, the page is not available or the resource never existed. 
+
 
 """
