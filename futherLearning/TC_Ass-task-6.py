@@ -46,5 +46,9 @@ The common HTTP methods and their purposes are:
 6. HEAD. It is similar to GET but returns only headers without a body
 7. OPTIONS. It ask the server which HTTP methods are allowed for a resource 
 
+Q3. 
+Statelessness in HTTP means that each request from a client to a server is treated as an independent or isolated transaction. The server does not store any information about the client's previous requests. Every request which a client sends must always contain all the data needed for the server to understand and process it. 
+Let's take for example we are ordering food at a restaurant, we order our food, we leave. The next day, the server would not remember what we ordered. Every transaction starts fresh every time 
+
 
 """
