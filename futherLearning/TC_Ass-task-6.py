@@ -74,5 +74,16 @@ A query string is a way to send additional data from the client to the server as
 - The server reads the URL and parses the key value pairs
 - The responds by using that data to filter, search and sort the resource
 
-
+Q 8.
+To set up a basic flask application, the following steps are needed
+1. Create a project folder and navigate into it
+2. Create a virtual environment in your working directory and activate it
+3. Install Flask using "pip install flask"
+4. Create a Python file (example app.py) with the following
+- import Flask
+- Create an instance of the Flask class
+- Define routes with @app.route()
+- Write view functions that return responses
+5. Run the app with "python app.py"
+6. We access the app in browser at http://127.0.0.1:5000 
 """
