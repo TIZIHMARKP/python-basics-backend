@@ -46,9 +46,16 @@ The common HTTP methods and their purposes are:
 6. HEAD. It is similar to GET but returns only headers without a body
 7. OPTIONS. It ask the server which HTTP methods are allowed for a resource 
 
-Q3. 
+Q 3. 
 Statelessness in HTTP means that each request from a client to a server is treated as an independent or isolated transaction. The server does not store any information about the client's previous requests. Every request which a client sends must always contain all the data needed for the server to understand and process it. 
 Let's take for example we are ordering food at a restaurant, we order our food, we leave. The next day, the server would not remember what we ordered. Every transaction starts fresh every time 
+
+Q 4. 
+HTTP headers are used to to pass additional information between the client and server controlling how the request is processed and how the response is interpreted. They provide meta data about the request or response that helps the client and server communicate effectively. The most common purposes include: 
+- Authorization. It sends credentials or tokens for authentication
+- Content-Type: it tells the client what type of data is in the body (such as text, json)
+- Cookie. Functions to transfer stored client data (session IDs)
+- Host. Specifying which server the request is for 
 
 
 """
