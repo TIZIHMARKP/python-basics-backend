@@ -68,5 +68,11 @@ Q 6.
 - Status code 200 stands for OK and indicates that the request was successfully processed and the server is returning the requested content. It is the standard success response for GET requests
 - Status code 404 stands for NOT FOUND and indicates that the server cannot find the requested resource. This is one of the most client errors and typically means that the URL is wrong, the page is not available or the resource never existed. 
 
+Q 7.
+A query string is a way to send additional data from the client to the server as part of the url appearing with a question mark (?). Example: https://techieversity.africa/learning?course1=backend&course2=frontend. It works as follows
+- The client sends the request which the browser or app adds data to the URL after ? 
+- The server reads the URL and parses the key value pairs
+- The responds by using that data to filter, search and sort the resource
+
 
 """
