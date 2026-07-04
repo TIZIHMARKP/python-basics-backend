@@ -98,5 +98,15 @@ The flask app instance is the central object in a flask application which is cre
 Q 10. 
 The `__name__ == "__main__"` check determines whether the current file is executed directly by the user or whether is is imported as a module into another program file.
 
+Q 11.
+Environment variables are used in Flask to manage configuration settings externally by keeping sensitive information out of the codebase and allowing different configurations for different environments (such as development, testing, production).
+Some Common Flask environment variables include:
+- FLASK_APP. it specifies the entry point of your application
+- FLASK_ENV. it sets the environment
+- SECRET_KEY. It is used for security
+- FLASK_DEBUG. It enables or disables debug mode
+An environment variable in flask can be access as follows: 
+import os
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 """
