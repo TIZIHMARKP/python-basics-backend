@@ -86,4 +86,14 @@ To set up a basic flask application, the following steps are needed
 - Write view functions that return responses
 5. Run the app with "python app.py"
 6. We access the app in browser at http://127.0.0.1:5000 
+
+Q 9. 
+The flask app instance is the central object in a flask application which is created by instantiating the flask class with app  = Flask(__name__). It acts as the central coordinator that ties everything together and is made up of the following key responsibilities
+- Routing: It registers URL routes using decorators like @app.route()
+- It receives incoming HTTP requests and directs them to the correct view function
+- It stores configuration settings (like app.config['DEBUG'] = True)
+- It integrates third-party extensions (like Flask-SQLAlchemy)
+- It further manages application and request contexts
+
+
 """
