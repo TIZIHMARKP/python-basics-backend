@@ -8,12 +8,13 @@ def split_and_add(arr, k):
     first_part = arr[:k]
     second_part = arr[k:]
 
+    # Adding the first part to the end of the second part
     result = second_part + first_part
 
     return result
 
 # Array: Modify the array to any len
-arr = [1, 2, 3, 4, 5]
+arr = [1, 2, 3, 4, 5, 6, 7, 5]
 # k = 2
 size = int(input("Enter lenght limit to split array: "))
 result = split_and_add(arr, size)
