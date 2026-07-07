@@ -12,6 +12,7 @@ def split_and_add(arr, k):
 
     return result
 
+# Array: Modify the array to any len
 arr = [1, 2, 3, 4, 5]
 # k = 2
 size = int(input("Enter lenght limit to split array: "))
