@@ -4,7 +4,7 @@ def split_and_add(arr, k):
     if k <= 0 or k >= len(arr):
         return arr
     
-
+    # Spliting the array into two parts
     first_part = arr[:k]
     second_part = arr[k:]
 
