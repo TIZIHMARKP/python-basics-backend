@@ -1,3 +1,4 @@
+# A monotonic array is one that is entirely non-increasing or non-decreasing.
 
 def isMonotonic(arr):
     increasing = decreasing = True
@@ -11,9 +12,10 @@ def isMonotonic(arr):
     return increasing or decreasing
             
 
-arr1 = [1, 2, 3, 4]
-arr2 = [3, 2, 1]
-arr3 = [1, 3, 2, 4]
+# Testing the Function
+arr1 = [1, 2, 3, 4]   # Monotonic (non-decreasing)
+arr2 = [3, 2, 1]      # Monotonic (non-decreasing)
+arr3 = [1, 3, 2, 4]    # Not monotonic
 
 print("Array 1 is monotonic: ", isMonotonic(arr1))
 print("Array 2 is monotonic: ", isMonotonic(arr2))
