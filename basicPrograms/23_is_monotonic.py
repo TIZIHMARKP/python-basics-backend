@@ -13,3 +13,4 @@ def isMonotonic(arr):
 
 arr1 = [1, 2, 3, 4]
 arr2 = [3, 2, 1]
+arr3 = [1, 3, 2, 4]
