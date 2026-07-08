@@ -10,3 +10,5 @@ def isMonotonic(arr):
 
     return increasing or decreasing
             
+
+arr1 = [1, 2, 3, 4]
