@@ -27,15 +27,15 @@ matrix2 = [
     [3, 2, 1]
 ]
 
+# Calling the add_matrices function
 resultMatrix = add_matrices(matrix1, matrix2)
 
+# Displaying the results
 if isinstance(resultMatrix, str):
     print(resultMatrix)
 else:
     print("Sum of matrices: ")
     for row in resultMatrix:
         print(row)
-
-
 
 
