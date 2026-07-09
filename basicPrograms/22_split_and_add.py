@@ -21,3 +21,5 @@ result = split_and_add(arr, size)
 print("Original Array: ", arr)
 print("Array after splitting and adding: ", result)
 
+
+
