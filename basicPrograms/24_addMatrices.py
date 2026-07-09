@@ -26,3 +26,15 @@ matrix2 = [
     [3, 2, 1]
 ]
 
+resultMatrix = add_matrices(matrix1, matrix2)
+
+if isinstance(resultMatrix, str):
+    print(resultMatrix)
+else:
+    print("Sum of matrices: ")
+    for row in resultMatrix:
+        print(row)
+
+        
+
+
