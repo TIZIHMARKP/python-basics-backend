@@ -1,6 +1,9 @@
+# ========== This program multiplies two matrices and prints the result ===========
 
+#  Function to multiply two matrices
 def multiply_matrices(mat1, mat2):
 
+    # Checking if the matrices can be multiplied by determining the dimensions of the matrices
     rows1 = len(mat1)
     cols1 = len(mat1[0])
     rows2 = len(mat2)
