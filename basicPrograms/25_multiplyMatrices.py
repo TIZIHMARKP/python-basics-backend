@@ -9,6 +9,7 @@ def multiply_matrices(mat1, mat2):
     rows2 = len(mat2)
     cols2 = len(mat2[0])
 
+    # Checking if multiplication is possible
     if cols1 != rows2:
         return "Matrix multiplication is not possible. The number of columns in the first matrix must be equal to the number of rows in the second matrix."
     
