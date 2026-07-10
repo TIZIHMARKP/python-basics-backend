@@ -31,5 +31,13 @@ matrix2 = [
 ]
 
 
+resultMatrix = multiply_matrices(matrix1, matrix2)
+
+if isinstance(resultMatrix, str):
+    print(resultMatrix)
+else:
+    print("Result of matrix multiplication")
+    for row in resultMatrix:
+        print(row)
 
 
