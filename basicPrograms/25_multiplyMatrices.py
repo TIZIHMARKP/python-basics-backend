@@ -13,8 +13,10 @@ def multiply_matrices(mat1, mat2):
     if cols1 != rows2:
         return "Matrix multiplication is not possible. The number of columns in the first matrix must be equal to the number of rows in the second matrix."
     
+    # Initializing the result matrix with zeros
     result = [[0 for _ in range(cols2)] for _ in range(rows1)]
 
+    # Performing matrix multiplication
     for i in range(rows1):
         for j in range(cols2):
             for k in range(cols1):
@@ -22,7 +24,7 @@ def multiply_matrices(mat1, mat2):
 
     return result
 
-
+# Example matrices for multiplication
 matrix1 = [
     [1, 2, 3],
     [4, 5, 6],
@@ -34,9 +36,10 @@ matrix2 = [
     [11, 12]
 ]
 
-
+# Calling the multiply_matrices function
 resultMatrix = multiply_matrices(matrix1, matrix2)
 
+# Displaying the results
 if isinstance(resultMatrix, str):
     print(resultMatrix)
 else:
