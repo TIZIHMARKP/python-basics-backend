@@ -20,3 +20,5 @@ arr3 = [1, 3, 2, 4]    # Not monotonic
 print("Array 1 is monotonic: ", isMonotonic(arr1))
 print("Array 2 is monotonic: ", isMonotonic(arr2))
 print("Array 3 is monotonic: ", isMonotonic(arr3))
+
+
