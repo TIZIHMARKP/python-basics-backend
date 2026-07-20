@@ -78,4 +78,11 @@
 # - Example: /assignment?task=7&q=5, /users?page=7&name=tizih
 
 
+# 4. Template rendering in web applications is the process of generating dynamic HTML pages by combining static HTML structure with dynamic data from the server before they are send to the client browser. It is important because of the following purposes
+# - Separations of concerns. It makes it possible to to keep presentation template (HTML) from business logic (python code)
+# - Reusability. A single template can be used for multiple pages in a web application
+# - Template rendering displays data from databases, APIs or users input thereby making them dynamic with content
+# - Template rendering enhances maintainability as a single change in one HTML page updates everywhere
+# - HTML structure is clear and easy to understand. This makes it easy to read
+
 
