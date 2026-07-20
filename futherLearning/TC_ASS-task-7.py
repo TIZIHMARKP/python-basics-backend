@@ -69,4 +69,13 @@
 # - Furthermore, declare which HTTP methods are to be used in a specific routes to avoid errors
 # - Last but not the list, validate users input data in the route function to ensure only the required or correct data is send by the user
 
+# 3. Parameters can be passed in URLs in two main ways which are: 
+# A. URL Path Parameters: These are values which are part of the URL path itself that are used to identify specific resources (like a user with a specific IDD).
+# - Examples are: /users/43, /posts/2026/flask-routing, 
+# - It is used when identifying a specific resource, creating clean SEO urls or when the parameter is essential to the route structure
+
+# B. Query String Parameters: These are string parameters which appear after a question mark (?) and separated by &. They are used for filtering, searching pagination and optional data
+# - Example: /assignment?task=7&q=5, /users?page=7&name=tizih
+
+
 
