@@ -58,3 +58,15 @@
 # -  Routes further allows us to map our application's structure logically so that users can navigate easily thereby improving users experience
 # - To conclude, routing is important for building RESTFUL APIs in Flask applications
 
+# 2. Best practices for organising routes in a Flask application: 
+# - Make use of blueprints for modularity. Blueprints allows us to group related routes, templates, and static files in a reusable module which keeps code clean and organized
+# - We should always separate routes from application logic by moving the application logic to services
+# - Organize routes by features or domain and not by their HTTP methods
+# - Routes functions should be kept short. Each route should do one thing or have one responsibility
+# - Routes should be named descriptively making it easy for programmers to understand what each routes do
+# - Document your routes by using comments or readme to explain what each routes does
+# - Use consistent response formats like JSON or HTML formats to show the outcome of a request 
+# - Furthermore, declare which HTTP methods are to be used in a specific routes to avoid errors
+# - Last but not the list, validate users input data in the route function to ensure only the required or correct data is send by the user
+
+
