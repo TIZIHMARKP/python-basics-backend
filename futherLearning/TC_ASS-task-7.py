@@ -49,3 +49,12 @@
 
 # =================== TASK 7 ANSERS ==========================
 
+# 1. Routing in Flask is the process that maps a URL to a specific python function (which is often called the view function) in a flask application. It is defined using the @app.route() decorator which tells our Flask application which function to call when a specific URL is requested by a user. 
+
+# Routing in Flask is important for the following reasons:
+# - It Organizes code. Routing separates our application logic by URL thereby making it easier to manage and maintain
+# - It supports dynamic content. We can create flexible URLs that accept parameters such as: @app.route('/post/<int:post_id>') in a flask application
+# - Routing in flask supports different HTTP methods, making it possible to route the same URL but handle different methods like GEt, POST, DELETE. 
+# -  Routes further allows us to map our application's structure logically so that users can navigate easily thereby improving users experience
+# - To conclude, routing is important for building RESTFUL APIs in Flask applications
+
