@@ -85,4 +85,4 @@
 # - Template rendering enhances maintainability as a single change in one HTML page updates everywhere
 # - HTML structure is clear and easy to understand. This makes it easy to read
 
-# 5. 
+# 5. https://github.com/TIZIHMARKP/flask-blog-platform.git
