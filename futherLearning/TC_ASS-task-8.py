@@ -33,5 +33,12 @@
 # - Accessing cookies through the request.cookies attributes
 # - Last but not the least, it further access all uploaded files using the request.files attribute
 
+# 3. Form handling comes with several security concerns which when handled properly protects users and data. Some of these security concerns include:
+# - Cross-Site Scripting (XSS). Attackers inject malicious javascript into users form fields. When the data is displayed without being sanitized, the script runs in other user's browsers, which may potentially steal cookies, session data, or performing actions on behalf of the user. It can be prevented by sanitizing input
+# - Cross-Site Request Forgery (CSRF). It is a scenario where attackers trick authenticated users to submit a form they didn't intend to submit. The form sends a request to the users application with the user's session, allowing the attacker to perform actions without the user's consent. It can be prevented by the use of CSRF tokens where a unique token for each form is generate and validated
+# - SQL Injection. It is a situation in which hackers or attackers inject malicious sql queries through form data. It can be prevented using an ORM like SQLAlchemy
+# - File Upload Vulnerabilities. It is the upload of malicious files that could execute code on a user server. It can be prevented by validating file types (extensions), limiting file size or renaming uploaded files
+# - Log Injection. It is a situation whereby an attacker submit data that corrupts logs thereby making them harder to read or injecting malicious log entries.
+
 
 
