@@ -25,4 +25,13 @@
 # iv. Query Parameters (GET requests)
 # - When form data is appended to the url query string, data is retrieved using request.args.get('key')
 
+# 2. The request object in flask represents the current incoming HTTP request sent by a client through a web browser or API request. It is the primary way which all Flask applications retrieve client data, including form submissions, query parameters, json payloads, file uploads, headers and cookies. The main roles include:
+#  - Accessing form data from POST requests by making use of request.form
+# - Accessing URL query parameters using the request.args attribute
+# - Getting all request HTTP methods using request.method attribute
+# - Accessing JSON data from API requests through the request.get_json() attribute
+# - Accessing cookies through the request.cookies attributes
+# - Last but not the least, it further access all uploaded files using the request.files attribute
+
+
 
