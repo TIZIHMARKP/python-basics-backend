@@ -11,5 +11,13 @@ def transpose_matrix(matrix):
     return result
 
 
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
 
+transpose_matrix = transpose_matrix(matrix)
+
+for row in transpose_matrix:
+    print(row)
 
