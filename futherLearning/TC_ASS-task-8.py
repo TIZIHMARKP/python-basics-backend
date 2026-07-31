@@ -53,3 +53,4 @@
 # - SQL databases are relational, storing data in structured tables with rows and columns. On the other hand, NoSQL databases are non-relational, storing data in flexible formats like documents, key-value pairs or graphs.
 # - SQL databases scales vertically by increasing the hardware capacity of a single server while NoSQL databases are designed to scales horizontally by distributing data across multiple servers 
 # - SQL uses a standardized query language to manipulate and query data while NOSQL lacks a standard language
+
