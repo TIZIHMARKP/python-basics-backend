@@ -10,14 +10,16 @@ def transpose_matrix(matrix):
 
     return result
 
-
+# Input matrix
 matrix = [
     [1, 2, 3],
     [4, 5, 6]
 ]
 
+# Transposing the matrix
 transpose_matrix = transpose_matrix(matrix)
 
+# Printing the transposed matrix
 for row in transpose_matrix:
     print(row)
 
