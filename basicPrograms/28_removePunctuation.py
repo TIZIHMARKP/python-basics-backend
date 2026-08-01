@@ -1,6 +1,7 @@
-
+# Defining punctuation
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
+# taking input
 my_str = input("Enter a string: ")
 
 no_punct = ""
