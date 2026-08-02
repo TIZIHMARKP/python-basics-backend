@@ -6,7 +6,8 @@ def is_disarium(num):
 
     return num == digit_sum
 
-disarium_numbers = [num for num in range(1, 101) if is_disarium(num) ]
+# Setting range between 1 - 100. U can chage the range to anu number either 1000 etc, it stills works
+disarium_numbers = [num for num in range(1, 101) if is_disarium(num) ] 
 
 print("Disarium numbers between 1 & 100: ")
 for num in disarium_numbers:
