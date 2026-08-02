@@ -8,13 +8,14 @@ def is_disarium(number):
     # Calculating the sum of digits raised to their respective powers
     digit_sum = sum(int(i) ** (index + 1) for index, i in enumerate(num_str))
 
-    # Checking if the sumis equal to the original number
+    # Checking if the sum is equal to the original number
     return digit_sum == number
 
-try:
-    num = int(input("Enter a number: "))
 
-    # 
+try:
+    num = int(input("Enter a number: "))  # user input
+
+    # Checking if it's a disarium number
     if is_disarium(num):
         print(f"{num} is a Disarium number: ")
     else:
