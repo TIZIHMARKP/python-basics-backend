@@ -3,7 +3,7 @@
 # 8^1 + 9^2 = 8 + 81 = 89
 
 def is_disarium(number):
-    # 
+    # Converting the number to a string to loop over its digit
     num_str = str(number)
 
     digit_sum = sum(int(i) ** (index + 1) for index, i in enumerate(num_str))
