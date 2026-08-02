@@ -5,9 +5,10 @@
 def is_disarium(number):
     # Converting the number to a string to loop over its digit
     num_str = str(number)
-
+    # Calculating the sum of digits raised to their respective powers
     digit_sum = sum(int(i) ** (index + 1) for index, i in enumerate(num_str))
 
+    # Checking if the sumis equal to the original number
     return digit_sum == number
 
 try:
