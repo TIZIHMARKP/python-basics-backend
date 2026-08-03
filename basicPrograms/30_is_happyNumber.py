@@ -11,4 +11,20 @@
 
 # The process reaches 1, so 19 is a Happy Number
 
+def is_happy_numver(num):
+    seen = set()    #
+
+    while num != 1 and num not in seen:
+        seen.add(num)
+        num = sum(int(i) ** 2 for i in str(num))
+
+    return num == 1
+
+num = int(input("Enter a number: "))
+if is_happy_numver(num):
+    print(f"{num} is a Happy Number")
+else:
+    print(f"{num} is not a Happy Number")
+
+
 
