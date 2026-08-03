@@ -20,6 +20,7 @@ def is_happy_numver(num):
 
     return num == 1
 
+# Testing the function with a number
 num = int(input("Enter a number: "))
 if is_happy_numver(num):
     print(f"{num} is a Happy Number")
