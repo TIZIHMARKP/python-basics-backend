@@ -12,7 +12,7 @@
 # The process reaches 1, so 19 is a Happy Number
 
 def is_happy_number(num):
-    seen = set() #
+    seen = set() # To store previously seen numbers
 
     while num != 1 and num not in seen:
         seen.add(num)
@@ -27,4 +27,4 @@ if is_happy_number(num):
 else:
     print(f"{num} is not a Happy Number")
 
-    
+
