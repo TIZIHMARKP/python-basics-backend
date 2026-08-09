@@ -5,3 +5,11 @@
 # 18 is a Harshad number because 1 + 8 = 9, and 18 is divisible by 9
 # 42 is not a Harshad number because 4 + 2 = 6, and 42 is not divisible by 6.
 
+def is_harshad_number(num):
+
+    digit_sum = sum(int(i) for i in str(num))
+
+    return num % digit_sum == 0
+
+
+
