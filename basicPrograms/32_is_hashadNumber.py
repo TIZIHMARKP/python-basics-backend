@@ -13,7 +13,7 @@ def is_harshad_number(num):
 
 num = int(input("Enter a number: "))
 
-#
+# Checking it its a Harshad number
 if is_harshad_number(num):
     print(f"{num} is a Harshad Number")
 else:
