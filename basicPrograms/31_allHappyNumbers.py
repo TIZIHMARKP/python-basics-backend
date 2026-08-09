@@ -7,3 +7,11 @@ def is_happy_number(num):
 
     return num == 1
 
+happy_number = []
+
+for num in range(1, 101):
+    if is_happy_number(num):
+        happy_number.append(num)
+
+print("Happy Numbers between 1 and 100: ")
+print(happy_number)
