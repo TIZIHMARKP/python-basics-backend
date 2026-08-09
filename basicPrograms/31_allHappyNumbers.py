@@ -14,5 +14,5 @@ for num in range(1, 501):  # input your range of happy numbers here
         happy_number.append(num)
 
 print("Happy Numbers between 1 and 100: ")
-print(happy_number)
+print(happy_number)   # Displaying all happy numbers between range
 
