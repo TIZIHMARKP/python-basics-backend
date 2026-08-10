@@ -48,5 +48,13 @@
 
 # Add a /api/products/search route that accepts a query parameter (e.g., /api/products/search?name=laptop) to filter products by name (case-insensitive).
 
+# ================== ANSWERS ================
+# 1. CRUD stands for Create, Read, Update, and Delete and these are the four fundamental operations which can be used to manage data in a database. 
+# - Create inserts a new data into a database
+# - Read retrieves existing data from a database
+# - Update modifies an existing data in a database
+# - Delete removes an existing data from a database
+# CRUD operations are the foundations of most backend applications
+
 
                                                                  
