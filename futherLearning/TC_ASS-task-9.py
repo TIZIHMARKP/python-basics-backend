@@ -75,4 +75,10 @@
 # db.session.add(new_task)  # Adding to session
 # db.session.commit()       # Saving to database
 
-                                                                 
+
+# Q3. 1. db.session.add(). It stages an object for insertion into the database or updates the session of a database with a new record. No database change occurs in the database until the commit() function is called, it just adds the object to pending in the session
+
+# 2. db.session.commit(). It is used to permanently save all pending changes (such as inserts, updates, deletes) to the database thereby making all staged changes permanent. If any error occurs during the process, the instruction is rollback
+
+# 3. db.session.rollback(). It is used when an error occurs or when we want to discard changes. It cancels all pending changes and reverses previous sessions to their last committed state. Furthermore, it prevents partial or inconsistent data from being saved
+
