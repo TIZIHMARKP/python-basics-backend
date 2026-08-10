@@ -63,5 +63,16 @@
 # 3. We add the object instance to the Session. The database object instance is added to the session using db.session.add() which acts like the staging area tracking pending changes to be added to the database. For multiple records, we use db.session.add_all([example1, example2])
 # 4. Lastly, we commit the session.  The changes are save permanently with db.session.commit(), and this converts the python object operations into an SQL INSERT statement. After it has been commited, fields are generated (like primary key) in SQLAlchemy. 
 
+# The following example shows how data is created and saved  using SQLAlchemy: 
+# from flask_sqlalchemy import SQLAlchemy
+# db = SQLAlchemy()
+# class Assingment(db.Model):  # Defining the model (table)
+#     id = db.Column(db.Integer, primary_key=True)
+#     course = db.Column(db.String(100), nullable=False)
+#     task = db.Column(db.Integer, nullable=False)
+
+# new_task = Assingment(course="Backend", task=9) # creating an instance object
+# db.session.add(new_task)  # Adding to session
+# db.session.commit()       # Saving to database
 
                                                                  
