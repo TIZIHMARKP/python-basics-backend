@@ -49,12 +49,19 @@
 # Add a /api/products/search route that accepts a query parameter (e.g., /api/products/search?name=laptop) to filter products by name (case-insensitive).
 
 # ================== ANSWERS ================
-# 1. CRUD stands for Create, Read, Update, and Delete and these are the four fundamental operations which can be used to manage data in a database. 
+# Q1. CRUD stands for Create, Read, Update, and Delete and these are the four fundamental operations which can be used to manage data in a database. 
 # - Create inserts a new data into a database
 # - Read retrieves existing data from a database
 # - Update modifies an existing data in a database
 # - Delete removes an existing data from a database
 # CRUD operations are the foundations of most backend applications
+
+# Q2. In Flask SQLAlchemy, to create data, it relies on the Object Relational Mapping patter (ORM). Instead of writing raw SQL queries database records are created as standard python class instances and they are saved to the database using the db.session object. It has the following key steps from data being created to data being saved: 
+
+# 1. We define the database model. A model is a python class that inherits from db.Model which defines the structure of the database table (columns, datatypes, and constraints) using db.Column 
+# 2. We instantiate the Model (Create the Record). New records are created by instantiating the model class with key value arguments which represent column values. The object at this stage exists only in python memory and has not yet been added to the database yet
+# 3. We add the object instance to the Session. The database object instance is added to the session using db.session.add() which acts like the staging area tracking pending changes to be added to the database. For multiple records, we use db.session.add_all([example1, example2])
+# 4. Lastly, we commit the session.  The changes are save permanently with db.session.commit(), and this converts the python object operations into an SQL INSERT statement. After it has been commited, fields are generated (like primary key) in SQLAlchemy. 
 
 
                                                                  
