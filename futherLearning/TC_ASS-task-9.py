@@ -82,3 +82,8 @@
 
 # 3. db.session.rollback(). It is used when an error occurs or when we want to discard changes. It cancels all pending changes and reverses previous sessions to their last committed state. Furthermore, it prevents partial or inconsistent data from being saved
 
+# Q4. The @app.route() and @api.route() decorators in Flask are used to map urls to python functions. 
+# - They are used to define the endpoints of an application in flask 
+# - Both api.route or app.route are used to map HTTP methods to specific functions
+# - To add, app.route and api.route are used to organize code by separating routes using Blueprints
+
