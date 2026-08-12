@@ -36,3 +36,43 @@
 # - Collaboration. With blueprints in flask, it makes it easier for multiple developers to work on different areas of an application without conflicts
 # - Lastly but note the least, it is easier to test individual components of an application built with flask with the use of blueprints
 
+# Q4. Middleware is software or code that acts as a bridge between an incoming client HTTP request and the server response. It usually sits in the middle of the request response cycle, intercepting incoming requests and outgoing responses to perform additional processing like security checks. 
+# In flask, middleware can be implemented using three main ways which are
+# 1. Using @app.before_request and @app.after_request. 
+# - @app.before_request usually runs code before each request
+# - @app.after_request usually runs code after each request
+# For example 
+# @app.before_request
+# def authenticate(): # checking if user is login before giving them access
+#     if not session.get('user_id'):
+#         return "Please logIn", 401
+
+# @app.after_request
+# def add_security_headers(response): # Adding security layers for every response
+#     response.headers['X-Frame-Options'] = 'DENY'
+#     return response
+
+
+# 2 Using @app.errorhandler for exception handling. It is used for handling exceptions globally in one place. For example
+# @app.errorhandler(404)
+# def not_found(error):
+#     return jsonify({"error": "Resource not found"})
+
+# 3. By using custom WSGI middleware which wraps the  entire flask application with a WSGI middleware class. For example
+# class LoggingMiddleware:
+#     def __init__(self, app):
+#         self.app = app
+#     def __call__(self, environ, start_response):
+#         print(f"request: {environ.get('PATH_INFO')}")
+#         response = self.app(environ, start_response)
+#         print("Response sent")
+#         return response
+
+# app.wsgi_app = LoggingMiddleware(app.wsgi_app)
+
+
+
+
+
+
+
