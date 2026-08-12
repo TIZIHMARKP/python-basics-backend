@@ -29,5 +29,10 @@
 # - Data Volume and Performance. Large amounts of data can be slow to fetch over an external API due to slow pagination over many records and processing overhead
 
 
-
+# Q3. In Flask, Blueprints is a way to organize and structure web applications into distinct reusable components or modules. It has the following purposes in flask
+# - Modularization. Large applications are difficult to maintain if all routes, databases models and code logic are all kept in a single file. Blueprints allow developers to break down large applications into logical functional modules or components 
+# - Code reusability and organization. A blueprint functions like a mini section of an app that can be registered multiple times on the same application under different URL
+# - Separation of concerns. Blueprints enable developers to keep different areas of the application separate from each other
+# - Collaboration. With blueprints in flask, it makes it easier for multiple developers to work on different areas of an application without conflicts
+# - Lastly but note the least, it is easier to test individual components of an application built with flask with the use of blueprints
 
