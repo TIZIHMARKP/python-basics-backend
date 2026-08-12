@@ -21,4 +21,13 @@
 # -   To send data to an external API, we use requests.post()
 # - The primary python module used to make HTTP requests is the requests library, which is a third party package that requires installation (pip install requests). It handles HTTP interactions, manages sessions and allows for JSON parsing
 
+# Q2. Some of the most common challenges when working with external APIs include
+# - Authentication and Authorization complexity. APIs use various security implementations some of which range from simple API keys to complex multi factor flows. Improperly stored API keys can expose sensitive data to leaks.  Furthermore, managing short lived access tokens, refresh tokens and signature generations (like JWTs) also increase code complexity
+# - Breaking changes and API versioning. API providers are usually updating their systems and if a provider introduces a breaking change like removing endpoints, renaming JSON keys or changing data types without proper versioning of the APIs, it becomes possible for clients applications to crash with an unexpected runtime error when the external APIs were updated without notice
+# - Rate Limiting. External APIs providers usually restrict the number  of requests a client can make within a specific time frame (like100 requests per hour) to prevent server overload and as a result of this, applications can crash or fail to serve users during high traffic 
+# - Network Issues and Timeouts. External APIs are accessed over the internet which is unreliable due to network failures or slow responses and timeouts are some of the common challenges experienced
+# - Data Volume and Performance. Large amounts of data can be slow to fetch over an external API due to slow pagination over many records and processing overhead
+
+
+
 
