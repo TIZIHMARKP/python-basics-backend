@@ -10,6 +10,47 @@
 
 # 5. Todo List API with Basic Authentication
 
+# Build a RESTful Flask API for a todo list, using Blueprints for modularity and basic authentication, with tasks stored in memory, SQLite or SQL. Push to Github
+
+# Requirements:
+
+# REST III – Todo List & Resources, External API Connection:Create a RESTful API for todos with routes:GET /api/todos: List all todos.
+
+# POST /api/todos: Create a todo (JSON: title, description, completed).
+
+# PUT /api/todos/<id>: Update a todo.
+
+# DELETE /api/todos/<id>: Delete a todo.
+
+# Use an in-memory list, SQLite or SQL for storage (e.g., todos table: id, title, description, completed).
+
+# Connect to an external API (e.g., https://jsonplaceholder.typicode.com/todos) to fetch sample todos on startup and populate the database/list.
+
+
+# Blueprints, Middleware, Hooks, Authentication, Authorization:
+
+# Use a Flask Blueprint (todo_bp) to organize todo-related routes.
+
+# Implement basic authentication using HTTP Basic Auth (e.g., flask-httpauth) with a hardcoded user (e.g., username: admin, password: secret).
+
+# Add a before_request hook to log all incoming requests (method, path) to a file.
+
+
+# Functionality:
+
+# Fetch initial todos from the external API using the requests library and store them.
+
+# Require authentication for all API routes, returning 401 for unauthorized access.
+
+# Return JSON responses with appropriate status codes (e.g., 201 for created, 404 for not found).
+
+# Handle errors (e.g., invalid JSON, non-existent ID) with JSON responses.
+
+# Structure the app with app.py, a todo Blueprint module, and static/ for optional UI.
+
+# Add a /api/todos/completed route to return only completed todos, accessible only to authenticated users.
+
+# write a small test suite for at least one endpoint
 
 
     
