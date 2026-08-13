@@ -81,4 +81,9 @@
 # 4. `assert` is used to check expected results in the function
 # 5. The program is executed by running the `pytest` command in the command line
 
+# Q3. Testing a route in flask can be done using the built-in test client (app.test_client()) which simulates HTTP requests when the server has not been started. 
+# - The first step is to create a test client using client = app.test_client()
+# - The second step is to send a requests using client.get() or any other HTTP method
+# - We then check the status response and json response using assert
+
 
