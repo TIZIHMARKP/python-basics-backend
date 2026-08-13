@@ -86,4 +86,8 @@
 # - The second step is to send a requests using client.get() or any other HTTP method
 # - We then check the status response and json response using assert
 
-
+# Q4. Environment variables roles during deployment include: 
+# - Security and secret management. Sensitive credentials such as database passwords, API keys, encryption keys must never be hardcoded into source code or committed to Git repositories
+# - Environment separation. Environment variables play a key role for having different configurations settings for an application base on which stage it is running such as development stage, testing or production stage but still keeping similar or identical code
+# - Portability. Environment variables play a role to make it possible to be able to run same code in any environment stage
+# - Again, environment variables gives flexibility during deployment as developers are just required to change configurations without the need to redeploy  
