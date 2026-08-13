@@ -79,7 +79,16 @@
 # The difference between @before_request and after_request hooks lies in their execution timing
 # - @app.before_request runs before the route function is called and it has access to the request object but not the response while @app.after_request runs after the route function returns a response and it has access to both the request and response object. 
 
-
+# Q6. Authentication in the context of web applications is the process of verifying and proving the identity of a user, service or system attempting to access a web application with the goal to confirm that the entity is who they claim to be. 
+# Authorization is the process of determining whether an authenticated user has permission to perform a specific action or access a specific resource within a web application. For example an admin vs a regular user permissions
+# Security practices to be followed when implementing authentication include
+# - Hash and salt passwords. Passwords should never be stored directly in plain text on the database, but should rather be bcrypted and salted. 
+# - Strong password policies should be implemented such as minimum length limit and mixed characters  
+# - Rate limiting should be implemented to prevent brute-force attacks
+# - Multifactor factor authentication implementation is an additional advantage to be implemented and this adds and extra layer of security
+# - All users secrets should be stored in environment variables and not stored directly in code thereby preventing cyberattacks from hackers
+# - All users authentications attempts should be log to always monitor for suspicious activity
+# - Lastly but not the least, users session timeouts should be set to automatically log out idle users
 
 
 
