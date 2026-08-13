@@ -64,5 +64,21 @@
 # - Unit testing tests individual components in isolation while Integration testing tests how multiple components work together, using real dependencies like databases or APIs
 # - Furthermore, Unit testing testing is fast, easy to write and catches logic errors whereas Integration testing takes time to ensure all different components work together and it catches interaction errors between the components. 
 
+# Q2. Debugging is the process of finding, analyzing and fixing errors or unintended behaviors in software code with the main purpose of ensuring that software operates correctly, reliably and according to specifications of the application by removing the problems of failures. The main objectives of debugging are: 
+# - To detect logical errors
+# - To identify all runtime errors
+# - To verify all state changes and variable values at specific execution steps thereby reducing application downtime and increasing application stability 
+
+# print() is used in the following ways for debugging in python:
+# - print() is inserted inside conditions or loops to verify which branches execute
+# - print() is used to inspect state during debugging by printing variable values before and after operations to see or know where data changes unexpected
+# - print() can further be used for debugging by making use of the python f-string debugging syntax `print(f"{variableName=}" variableValue")`  to print both the variable name and its value automatically
+
+# `pytest` is a python testing framework which is used to write and run automated tests. It can be used by following the various steps below
+# 1. Install pytest by using the command 'pip install pytest'
+# 2. Test files are created which starts with test_ or ending with _test.py
+# 3. Test functions are written which stars with test_ 
+# 4. `assert` is used to check expected results in the function
+# 5. The program is executed by running the `pytest` command in the command line
 
 
