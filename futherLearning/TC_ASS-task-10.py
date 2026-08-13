@@ -71,6 +71,13 @@
 # app.wsgi_app = LoggingMiddleware(app.wsgi_app)
 
 
+# Q5. Flask hooks are special decorator functions that allows developers to execute code automatically at specific stages in the life cycle of a HTTP request. Flask hooks usually allows developers to run functions automatically before or after a request is processed without the need to call them directly in every route. They are used for the following
+# - Authentication and Authorization. It is used to check if a user is login or if a valid API token is present before executing the route handler
+# - Error handling. They are used to log errors when an exception occurs during a request execution 
+# - Database Connection.  Flask hooks are used for opening a database connection when a request arrives and closing it when the request ends
+# - Logging and Analytics. Flask hooks are used for logging request details like endpoint, ip address, timestamp and also used for measuring the duration of a request. 
+# The difference between @before_request and after_request hooks lies in their execution timing
+# - @app.before_request runs before the route function is called and it has access to the request object but not the response while @app.after_request runs after the route function returns a response and it has access to both the request and response object. 
 
 
 
