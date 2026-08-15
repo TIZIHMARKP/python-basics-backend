@@ -8,3 +8,5 @@ def find_n_largest_elements(lst, n):
     return largest_elements
 
 
+numbers = [30, 10, 45, 5, 20, 15, 3, 345, 67, 83, 100, 173, 84, 95]
+
