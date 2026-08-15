@@ -7,14 +7,15 @@ def find_n_largest_elements(lst, n):
 
     return largest_elements
 
-
+# Sample list of numbers
 numbers = [30, 10, 45, 5, 20, 15, 3, 345, 67, 83, 100, 173, 84, 95]
 
+# Users input
 N = int(input("Input length N = "))
 
-#
+# Finding the N larges elements from the list
 result = find_n_largest_elements(numbers, N)
 
-# 
+# display result
 print(f"The {N} largest elements in the list are: ", result)
 
