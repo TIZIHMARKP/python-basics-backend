@@ -6,3 +6,4 @@ even_numbers = [num for num in numbers if num % 2 == 0]
 
 print("Even numbers in the list are: ", even_numbers)
 
+# Similar program to print for odd numbers in a list, just change `num % 2 == 0`
