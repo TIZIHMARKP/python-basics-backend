@@ -12,6 +12,12 @@ def find_words(words, k):
 
     return result
 
+word_list = ["apple", 'banana', "cherry", "date", "Cangaro", "through", 'Cameroon', "Womens", "Africa"]
+k = int(input("Enter lenght of K: "))
+
+long_words = find_words(word_list, k)
+
+print(f"Words longer than {k} characters:  {long_words}")
 
     
 
