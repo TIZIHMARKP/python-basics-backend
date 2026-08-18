@@ -1,13 +1,13 @@
 # Write a Python program to find words which are greater than given length k.
 
 def find_words(words, k):
-    #
+    # storing words greater than k in an empty list
     result = []
 
-    for i in words:
-        #
+    for i in words: # looping though each word in the list
+        # 
         if len(i) > k:
-            #
+            # checking if the length of the i is greater than k
             result.append(i)
 
     return result
