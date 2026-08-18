@@ -5,13 +5,14 @@ def find_words(words, k):
     result = []
 
     for i in words: # looping though each word in the list
-        # 
+        # checking if the length of the i is greater than k
         if len(i) > k:
-            # checking if the length of the i is greater than k
+            # If yes, we append to list
             result.append(i)
 
     return result
 
+# sample list
 word_list = ["apple", 'banana', "cherry", "date", "Cangaro", "through", 'Cameroon', "Womens", "Africa"]
 k = int(input("Enter lenght of K: "))
 
