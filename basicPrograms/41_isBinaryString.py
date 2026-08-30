@@ -4,9 +4,9 @@ def is_binary_str(input_str):
     for i in input_str:
         # checking if the i is not '0' or '1'
         if i not in '01':
-            return False
+            return False  # if any character is not '0' or '1' it's not a binary string
 
-    return True
+    return True   # if all characters are '0' or '1', it's a binary string
 
 input_str = '1001110'
 
