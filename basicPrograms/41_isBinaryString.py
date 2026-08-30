@@ -1,8 +1,8 @@
 
 def is_binary_str(input_str):
-
+    # iterating through each character in the input string
     for i in input_str:
-
+        # checking if the i is not '0' or '1'
         if i not in '01':
             return False
 
