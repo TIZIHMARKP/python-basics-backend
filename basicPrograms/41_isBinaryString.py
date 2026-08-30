@@ -8,9 +8,9 @@ def is_binary_str(input_str):
 
     return True   # if all characters are '0' or '1', it's a binary string
 
-input_str = '1001110'
+input_str = '1001110'   # input string
 
-if is_binary_str(input_str):
+if is_binary_str(input_str):   # checking if the input string is a binary string
     print(f"'{input_str}' is a binary string ")
 else:
     print(f"'{input_str}' is not a binary string")
