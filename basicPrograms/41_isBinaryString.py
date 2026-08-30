@@ -8,7 +8,12 @@ def is_binary_str(input_str):
 
     return True
 
-input_str = '0110101'
+input_str = '1001110'
+
+if is_binary_str(input_str):
+    print(f"'{input_str}' is a binary string ")
+else:
+    print(f"'{input_str}' is not a binary string")
 
 
 
