@@ -16,4 +16,4 @@ string2 = "Python is a computer language"
 uncommon = uncommon_words(string1, string2)
 
 print("Uncommon words: ", uncommon)
-
+# uncommon words: ['computer', 'programming']
