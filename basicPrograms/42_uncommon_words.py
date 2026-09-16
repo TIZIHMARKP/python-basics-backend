@@ -10,3 +10,10 @@ def uncommon_words(str1, str2):
 
     return uncommon_words_list
 
+string1 = "Python is a programming language"
+string2 = "Python is a computer language"
+
+uncommon = uncommon_words(string1, string2)
+
+print("Uncommon words: ", uncommon)
+
