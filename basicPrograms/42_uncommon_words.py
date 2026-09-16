@@ -12,9 +12,11 @@ def uncommon_words(str1, str2):
 
     return uncommon_words_list
 
+# Input two strings
 string1 = "Python is a programming language"
 string2 = "Python is a computer language"
 
+# Finding uncommon words between the two strings
 uncommon = uncommon_words(string1, string2)
 
 print("Uncommon words: ", uncommon)
