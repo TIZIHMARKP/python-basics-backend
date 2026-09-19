@@ -19,12 +19,13 @@ def find_duplicates(input_str):
 
     return duplicates
 
-
+# Input string
 input_string = 'royal shiloh'
 
+# finding the duplicate char in string
 duplicate_chars = find_duplicates(input_string)
 
-print("Duplicate characters: ", duplicate_chars)
+print("Duplicate characters: ", duplicate_chars)   # ['o', 'l']
 
 
 
