@@ -19,6 +19,11 @@ def find_duplicates(input_str):
     return duplicates
 
 
+input_string = 'royal shiloh'
+
+duplicate_chars = find_duplicates(input_string)
+
+print("Duplicate characters: ", duplicate_chars)
 
 
 
