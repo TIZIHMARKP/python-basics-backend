@@ -11,12 +11,13 @@ def check_special_char(in_str):
     else:
         return False
 
-
-input_string = str(input("Enter a string: "))   
+# Input a string
+input_string = str(input("Enter a string: "))   # Hello, World!
 
 contains_special = check_special_char(input_string)
 
+# display the results
 if contains_special:
-    print("The string contains special characters")
+    print("The string contains special characters")  # The string contains special characters
 else:
     print("The string does not contain special characters")
