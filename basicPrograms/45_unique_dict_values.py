@@ -1,4 +1,4 @@
-
+# sample dictionary
 my_dict = {
     'a': 10,
     'b': 20,
@@ -7,7 +7,7 @@ my_dict = {
     'e': 20,
 }
 
-
+# initializing an empty set to store unique values
 uni_val = set()
 
 for i in my_dict.values():
