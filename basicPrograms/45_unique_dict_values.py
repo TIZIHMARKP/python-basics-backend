@@ -10,7 +10,9 @@ my_dict = {
 # initializing an empty set to store unique values
 uni_val = set()
 
+# Iterating through the values of the dictionary
 for i in my_dict.values():
+    # Adding each value to the set
     uni_val.add(i)
 
 
