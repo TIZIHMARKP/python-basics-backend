@@ -15,7 +15,7 @@ for i in my_dict.values():
     # Adding each value to the set
     uni_val.add(i)
 
-
+# converting the set of unique values back to a list (if needed)
 unique_values_list = list(uni_val)
 
 print("Unique values in the dictionary: ", unique_values_list)
