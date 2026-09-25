@@ -10,8 +10,9 @@ my_dict = {
 # Initializing a variable to store the sum
 total_sum = 0
 
+# Iterate through the values of the dictionary and add them to the sum
 for i in my_dict.values():
     total_sum += i
 
-
-print("Sum of all items in the dictionary: ", total_sum)
+# display output
+print("Sum of all items in the dictionary: ", total_sum)  # 150
