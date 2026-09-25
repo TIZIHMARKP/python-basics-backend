@@ -1,4 +1,4 @@
-
+# Sample dictionary
 my_dict = {
     'a': 10,
     'b': 20,
@@ -7,6 +7,7 @@ my_dict = {
     'e': 50,
 }
 
+# Initializing a variable to store the sum
 total_sum = 0
 
 for i in my_dict.values():
